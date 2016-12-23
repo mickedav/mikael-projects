@@ -11,13 +11,14 @@
     "passport": "^0.3.2",
     "passport-google-oauth20": "^1.0.0",
     "underscore": "^1.8.3",
-    "when": "^3.7.7"
+    "when": "^3.7.7",
+    "cors": "^2.8.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "test",
     "start": "node app.js"
   },
-  "author": "Ulf Dahlstrand",
+  "author": "Mikael Davidsson (c)",
   "license": "ISC"
 }
