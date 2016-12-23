@@ -2,13 +2,16 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var config = require("./../config");
 var passport = require('passport');
+var cors = require('cors');
 
 var App = {
 	Express: {},
 	Server: {},
 	init: function() {
+		
 		App.Express = express();
 		App.Express.use(bodyParser());
+		App.Express.use(cors());
 
 		require("./../routes")();
 
