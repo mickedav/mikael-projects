@@ -16,7 +16,7 @@ function ProjectsService() {
 	self.getprojects = function(){
 		var deferred = when.defer();
 
-		Projects.find(function(err, projects) {
+		Projects.find({}).sort({id: -1}).exec(function(err, projects) {
 			deferred.resolve(projects);
 	  });
 
